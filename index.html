@@ -2,72 +2,112 @@
 <html>
 
 <head>
-  <title>Fernanda's Website</title>
+  <title>Lake Training</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- Note doesn't work in Safari -->
 </head>
 
 <body>
   <header id="header">
-    <h1>Fernanda's First Aid Training Website</h1>
+    <h1>Lake Training</h1>
     <nav>
       <ul>
-        <li><a href="#course-schedule">Course Schedule</a></li>
         <li><a href="#about-me">About Me</a></li>
+        <li><a href="#course-schedule">Course Schedule</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
+      <h1 id="about-me">About Me</h1>
+      <div class="about-me-content">
+        <div class="logo">
+          <img src="Full_Logo.jpg" alt="logo" />
+        </div>
+        <div class="about-me-text card">
+          <p>Hello and Welcome!</p>
+          <p>I'm Fernanda and I run first aid courses for small groups and driving lessons</p>
+          <p>I have worked for London Ambulance Service as a frontline HCPC parademic for 10 years.</p>
+          <p>I qualified as a driving instructor with East of England Ambulance Service</p>
+          <p>I enjoy doing handstands and swimming in open water</p>
+          <p>You can find me on <a href="https://www.facebook.com/LakeTraining">Facebook</a></p>
+        </div>
+      </div>
+      <blockquote class="large-quote">
+        Fernanda always comes up with fun analogies that really helps learning and recall
+      </blockquote>
+      <blockquote class="large-quote">
+        Fernanda is never dull
+      </blockquote>
+    </section>
+    <section>
       <h1 id="course-schedule">Course Schedule</h1>
 
       <p>The following are my upcoming courses</p>
 
-      <table>
-        <tr>
-          <th>Date</th>
-          <th>Time</th>
-          <th>Location</th>
-          <th>Notes</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td>14 Nov 2023</td>
-          <td>14:00</td>
-          <td>Daffy Ducks House</td>
-          <td>Bring bird feed if you wish to live</td>
-          <td>£100</td>
-        </tr>
-        <tr>
-          <td>27 Nov 2023</td>
-          <td>11:00</td>
-          <td>Button Moon</td>
-          <td></td>
-          <td>£110</td>
-        </tr>
-        <tr>
-          <td>11 Dec 2023</td>
-          <td>8:00</td>
-          <td>Avengers HQ</td>
-          <td>Bring pencils</td>
-          <td>£1200</td>
-        </tr>
-      </table>
-    </section>
-    <section>
-      <h1 id="about-me">About Me</h1>
-      <p>I have worked for London Ambulance Service as a parademic for 10 years.</p>
-      <p>I qualified as a driving instructor with East of England Ambulance Service</p>
+      <div class="courses">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title-block">
+              <div class="card-title">FREC 3 course - blended</div>
+              <div class="card-subtitle">First Response Emergency Care Level 3</div>
+            </div>
+            <div class="card-call-to-action">
+              <div class="btn">
+                <a class="btn-link" href="https://www.eventbrite.com/e/frec-3-course-blended-tickets-743433729297">Book via Eventbrite</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-additional">
+            <p>A blended 5 day course with 3 days online and 2 longer face to face days with assessments.</p>
+            <p>As a HCPC paramedic myself I bring real life experience and examples to my training. Using this blending learning approach the 2 face to face days can be mostly practical in nature.</p>
+            <p>Participants will need to be able to get down to the floor in order to perform good quality CPR, and patient care.</p>
+            <p>The course incorporates trauma care, minor injuries and illnesses, intermediate life support skills, defib use and much more.</p>
+            <p>Holders of the FREC3 qualification can go on to achieve FREC4 which is the equivalent to an Emergency Care Assistant in many NHS ambulance trusts.</p>
+            <p>Any questions do contact me including any concerns about pricing and accessibility, I will do my best to answer and will always be open and honest.</p>
+          </div>
+          <div class="card-main">
+            <div class="card-section">
+              <div class="card-section-title">Start Date</div>
+              <div class="card-section-main">Wednesday 29 November 2023</div>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">End Date</div>
+              <div class="card-section-main">Sunday 3 December 2023</div>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">Price</div>
+              <div class="card-section-main">
+                <span class="price-strike">£450</span>
+                <span class="price-actual">£350</span>
+              </div>
+            </div>
+            <div class="card-section">
+              <div class="card-section-title">Location</div>
+              <div class="card-section-main">
+                <div class="location-text">TBC North Walsham NR28</div>
+                <div class="location-map">
+                  <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=1.36,52.82,1.41,52.83&amp;layer=mapnik" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+          </div>
+        </div>
+      </div>
+
     </section>
     <section>
       <h1 id="contact">Contact</h1>
-      <p>You can email me at fernanda.lake@gmail.com or phone me on 07919388975</p>
+      <p>You can email me at <span class="email"><a href="">fernanda.lake@gmail.com</a></span> or phone me on <span class="phone"><a href="tel:07931475146" >07931 475 146</a></span></p>
     </section>
   </main>
   <footer>
-    <p>© 2023 Fernanda Lake. All rights reserved.</p>
+    <p>© 2023 Fernanda Lake. All rights reserved. This is the Way. For All Time. Always</p>
   </footer>
 </body>
 

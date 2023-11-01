@@ -1,12 +1,89 @@
 :root {
   --header-start: #047d04;
   --header-end: #99ff99;
-  --header-text: #ffffff;
-  --nav-text: white;
+  --header-text: black;
+  --nav-text: black;
   --main-background: #c8c48f;
   --footer-background: var(--header-start);
   --footer-text: white;
+  --card-header: rgb(71, 129, 71);
+  --card-background: rgb(205, 205, 125);
+  --footer-height: 10ch; /* prevent content overlapping footer */
 }
+
+.about-me-content {
+  display: flex;
+}
+
+.large-quote {
+  font-size: x-large;
+  font-style: italic;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align: center;
+  max-width: 70vh;
+  margin: 2em auto; /* Center the blockquote and add space around it */
+}
+
+.large-quote:before {
+  content: open-quote;
+}
+
+.large-quote:after {
+  content: close-quote;
+}
+
+.card {
+  background-color: var(--card-background);
+  margin: 1ch;
+  padding: 5ch;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5ch;
+}
+
+.card-header {
+  padding-bottom: 2ch;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-title {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-section-title {
+  font-weight: bold;
+  min-width: 10ch;
+}
+
+.price-strike {
+  text-decoration: line-through;
+  text-decoration-style: double;
+  color: red;
+}
+
+.btn {
+  padding: 2ch;
+  background: orange;
+  width: 20ch;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-link {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+main {
+  flex: 1 0 auto;
+ }
 
 body {
   font-family: Arial, sans-serif;
@@ -80,11 +157,10 @@ nav ul li a {
 footer {
   background-color: var(--footer-background);
   color: var(--footer-text);
+  display: flex;
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  justify-content: center;
+  height: var(--footer-height);
   width: 100%;
 }
 
